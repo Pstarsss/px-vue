@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    
+  <div class="live">
+    <h2>我是直播</h2>
   </div>
 </template>
 

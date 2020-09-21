@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    
+  <div class="shop">
+    <h2>我是商城</h2>
   </div>
 </template>
 
