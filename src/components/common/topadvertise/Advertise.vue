@@ -1,0 +1,85 @@
+<template>
+   <div class='topadv'>
+     <div class="adv-left">
+       <img :src="mogulogo" alt="">
+     </div>
+     <div class="adv-center">
+       <h2>{{info[0].mainTitle}}</h2>
+        <div>
+          <img :src="star" alt="">
+          <img :src="star" alt="">
+          <img :src="star" alt="">
+          <img :src="star" alt="">
+          <img :src="star" alt="">
+          <span>{{info[0].subTitle}}</span>
+        </div>
+     </div>
+     <div class="adv-right">
+       <el-button type="danger" round>打开App</el-button>
+     </div>
+   </div>
+</template>
+
+<script>
+import Advertiseda  from '@/assets/json/Advertise.json'
+import star from '@/assets/img/star.png'
+import mogulogo from '@/assets/img/mogulogo.png'
+export default {
+  components: {
+    star,
+    mogulogo,
+    Advertiseda
+  },
+  data() {
+    return {
+      star:star,
+      mogulogo:mogulogo,
+      info:''
+    };
+  },
+  created(){
+   this.info = Advertiseda.data.list;
+  }
+}
+</script>
+<style lang='less' scoped>
+.topadv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #b8c2cc;
+    & .adv-left{
+      display: flex;
+      align-self: center;
+      padding:2vw 3vw;
+      & img{
+        width:8vw;
+      }
+    }
+    & .adv-center{
+      flex-grow: 1;
+      & h2{
+        font-weight: 400;
+        font-size: 4vw;
+      }
+      & div{
+        & img{
+            width: 2.5vw;
+            padding:0 1vw;
+        }
+        & span{
+          font-size: 13px;
+          color: #b0a7a7;
+          padding-left: 1vw;
+        }
+      }
+      
+    }
+    & .adv-right{
+      padding:2vw 4vw;
+    }
+}
+.el-button.is-round {
+    padding: 2vw 3vw;
+}
+</style>
