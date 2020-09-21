@@ -1,7 +1,7 @@
 <template>
    <div class='bottombar'>
       <bottombar>
-        <bottombaritem path="/mogu/homepage">
+        <!-- <bottombaritem path="/mogu/homepage">
           <h4 slot='bottom-title'>首页</h4>
         </bottombaritem>
         <bottombaritem path="/mogu/shop">
@@ -12,6 +12,10 @@
         </bottombaritem>
         <bottombaritem path="/mogu/person">
           <h4 slot='bottom-title'>个人</h4>
+        </bottombaritem> -->
+        <bottombaritem v-for="(item,index) in infos" :key="index" :index="index" :path="infos[index].path"
+         @ishow="re" :class="{'active':index==temp}">
+          <h4 slot="bottom-title">{{item.titles}}</h4>
         </bottombaritem>
       </bottombar>
    </div>
@@ -28,10 +32,31 @@ export default {
   
   data() {
     return {
-      
+      temp:0,
+      infos:[
+        {
+          titles:'首页',
+          path:'/mogu/homepage'
+        },
+        {
+          titles:'商城',
+          path:'/mogu/shop'
+        },
+        {
+          titles:'直播',
+          path:'/mogu/live'
+        },
+        {
+          titles:'个人',
+          path:'/mogu/person'
+        },
+      ]
     };
   },
   methods:{
+    re(val){
+      this.temp = val;
+    }
   }
 }
 require('@/assets/css/base.css')
@@ -47,5 +72,8 @@ require('@/assets/css/base.css')
     align-items: center;
     height: 6vh;
     border-top: 1px solid #abc;
+}
+.active{
+  color:red;
 }
 </style>

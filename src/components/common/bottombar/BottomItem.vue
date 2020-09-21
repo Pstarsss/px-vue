@@ -1,5 +1,5 @@
 <template>
-   <div class='bottomitem' @click="changes">
+   <div class='bottomitem' @click="changes()" >
       <slot name="bottom-title"></slot>
    </div>
 </template>
@@ -9,9 +9,14 @@ export default {
   components: {},
   data() {
     return {
+      paths:'',
+      indexs:this.index
     };
   },
   props:{
+    index:{
+      type:[Number]
+    },
     path:{
       type:[String]
     }
@@ -19,9 +24,11 @@ export default {
   methods:{
     changes(){
       this.$router.push(this.path);
+      this.$emit('ishow',this.index);
     }
   }
 }
 </script>
 <style lang='less' scoped>
+
 </style>

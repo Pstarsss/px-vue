@@ -1,6 +1,5 @@
 <template>
    <div class='app'>
-     
      <router-view></router-view>
      <main-bottom-bar ></main-bottom-bar>
      <TopAdvertise></TopAdvertise>
