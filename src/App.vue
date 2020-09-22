@@ -1,8 +1,9 @@
 <template>
    <div class='app'>
-     <router-view></router-view>
+     
      <main-bottom-bar ></main-bottom-bar>
      <TopAdvertise></TopAdvertise>
+     <router-view></router-view>
    </div>
 </template>
 
@@ -38,6 +39,7 @@ export default {
   created(){
   }
 }
+require('@/assets/css/normalize.css')
 </script>
 <style lang='less' scoped>
 </style>

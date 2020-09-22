@@ -63,9 +63,16 @@ export default {
         font-size: 4vw;
       }
       & div{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         & img{
             width: 2.5vw;
             padding:0 1vw;
+            box-sizing:content-box;
+            &:first-child{
+              padding-left:0;
+            }
         }
         & span{
           font-size: 13px;

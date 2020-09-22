@@ -1,0 +1,37 @@
+{
+  "id": "2060280",
+  "name": "test",
+  "font_family": "iconfont-ali",
+  "css_prefix_text": "icon-ali",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12622647",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e796",
+      "unicode_decimal": 59286
+    },
+    {
+      "icon_id": "14382031",
+      "name": "我 的",
+      "font_class": "wode",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "15098111",
+      "name": "open shop",
+      "font_class": "openshop",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "16319429",
+      "name": " shopping",
+      "font_class": "goukeche",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

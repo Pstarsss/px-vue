@@ -10,7 +10,6 @@ export default {
   data() {
     return {
       paths:'',
-      indexs:this.index
     };
   },
   props:{
