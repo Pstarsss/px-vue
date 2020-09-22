@@ -72,6 +72,7 @@ require('@/assets/css/base.css')
     align-items: center;
     height: 6vh;
     border-top: 1px solid #abc;
+    z-index: 100;
 }
 .active{
   color:red;

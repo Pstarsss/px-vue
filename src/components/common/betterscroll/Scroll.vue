@@ -13,14 +13,33 @@ import BScroll from 'better-scroll'
 
 export default {
   components: {},
+  props:{
+    probeType:{
+      type:[Number],
+      default(){
+        return 0
+      }
+    },
+    pullUpLoad:{
+      type:[Boolean],
+      default(){
+        return false
+      }
+    },
+    pullDownRefresh:{
+      type:[Object],
+      default(){
+        
+      }
+    }
+  },
   data() {
     return {
-      
+      bs :''
     };
   },
   mounted(){
     this.init();
-    
   },
   beforeDestroy(){
 
@@ -28,18 +47,19 @@ export default {
   methods:{
     init(){
       this.bs = new BScroll(this.$refs.wraps, {
-        probeType: 3,
-        pullUpLoad: true,
+        probeType: this.probeType,
+        pullUpLoad: this.pullUpLoad,
         click:true,
-        pullDownRefresh:{
-          threshold: 50,
-          stop:20
-        }
+        pullDownRefresh:this.pullDownRefresh,
       });
       this.bs.on('pullingUp',()=>{
-        console.log('获取数据，并将数据发射出去，父组件进行接收。展示');
+        this.$emit('pullingUp');
       });
+      this.bs.on('scroll',({ y })=>{
+        this.$emit('scroll',y)
+      })
     }
+
   }
 }
 </script>

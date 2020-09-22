@@ -17,16 +17,21 @@
 </template>
 
 <script>
-import goods from '@/assets/json/goods.json'
+import good1 from '@/assets/json/goods.json'
 export default {
-  components: {},
+  components: {
+
+  },
   data() {
     return {
-      goods:goods.data.list,
+      goods:good1.data.list
     };
   },
+  props:{
+    
+  },
   created(){
-    console.log(this.goods[0].modelData);
+    console.log(good1);
   }
 }
 </script>

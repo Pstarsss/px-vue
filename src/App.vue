@@ -1,7 +1,6 @@
 <template>
    <div class='app'>
-     
-     <main-bottom-bar ></main-bottom-bar>
+     <main-bottom-bar></main-bottom-bar>
      <TopAdvertise></TopAdvertise>
      <router-view></router-view>
    </div>
