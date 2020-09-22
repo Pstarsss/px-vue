@@ -1,8 +1,13 @@
 <template>
   <div class="homepage">
     <search-bar></search-bar>
-    <swiper></swiper>
-    <recommand></recommand>
+    
+    <scroll>
+      <swiper></swiper>
+      <recommand></recommand>
+      <goods></goods>
+    </scroll>
+    
   </div>
 </template>
 
@@ -10,12 +15,17 @@
 import SearchBar from '@/components/common/searchbar/SearchBar.vue'
 import Swiper from '@/components/common/swiper/Swiper.vue'
 import Recommand from '@/components/common/recommand/Recommand.vue'
+import Goods from '@/components/affair/goods/Goods.vue'
+import Scroll from '@/components/common/betterscroll/Scroll.vue'
 export default {
   name: 'homepage',
   components: {
     SearchBar,
     Swiper,
-    Recommand
+    Recommand,
+
+    Scroll,
+    Goods,
   },
   methods:{
 
