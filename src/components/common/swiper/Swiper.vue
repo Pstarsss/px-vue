@@ -23,21 +23,25 @@ export default {
 }
 </script>
 <style lang='less' scoped>
-.el-carousel__container {
-    position: relative;
-    height: 280px !important;
-}
 .el-carousel__item img {
     width:100%;
     height:100%;
     opacity: 0.75;
     margin: 0;
   }
+.el-carousel__item{
+  height:100%;
+}  
 .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }
 
 .el-carousel__item:nth-child(2n+1) {
   background-color: #d3dce6;
+}
+.el-carousel--horizontal {
+    overflow-x: hidden;
+    height: 258px;
+    margin-bottom: 4vw;
 }
 </style>
