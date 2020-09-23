@@ -60,12 +60,13 @@ require('@/assets/css/icon2/iconfont.js')
     z-index: 999;
   }
   .Id{
-    
+    width: 100%;
+    height: 2rem;
     display: inline-block;
-    margin-left: 9rem;
+    text-align: center;
   }
   .hyzx{
-    width: 21rem;
+    width: 100%;
     height: 4rem;
     background-image: url(会员中心.png);
     background-size: 100% 100%;
