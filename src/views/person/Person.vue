@@ -1,16 +1,29 @@
 <template>
   <div class="person">
-    个人中心
+    <pic></pic>
+    <personer></personer>
+    
   </div>
 </template>
 
 <script>
-
+import Pic from '@/components/box/persons/Pic.vue'
+import Personer from '@/components/box/persons/Personer.vue'
 
 export default {
   name: 'Home',
   components: {
+    Personer,
+    Pic,
+  },
+  methods:{
 
+  },
+  created () {
+    
   }
 }
 </script>
+<style scoped>
+
+</style>
