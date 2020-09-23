@@ -1,11 +1,12 @@
 <template>
   <div class="homepage">
-    <search-bar></search-bar>
+    
     
     <scroll ref="scr" @scroll="showbacktop" @pulling-up="pullup1" :pullUpLoad="true">
+      <search-bar></search-bar>
       <swiper></swiper>
       <recommand></recommand>
-      <goods></goods>
+      <goods :homegoods='homegoods'></goods>
     </scroll>
     <back-top @click.native="toTop" v-show="isShow"></back-top>
   </div>
@@ -18,6 +19,8 @@ import Recommand from '@/components/common/recommand/Recommand.vue'
 import Goods from '@/components/affair/goods/Goods.vue'
 import Scroll from '@/components/common/betterscroll/Scroll.vue'
 import BackTop from '@/components/affair/backtop/BackTop.vue'
+import homegood from '@/assets/json/goods.json'
+
 
 export default {
   name: 'homepage',
@@ -37,6 +40,7 @@ export default {
     return{
       isShow:false,
       lists:'',
+      homegoods:homegood.data.list
     }
   },
   methods:{
@@ -56,8 +60,7 @@ export default {
     }
   },
   created(){
-    
-    // console.log(Recommand.components.recommand.data[140653].list);
+     
   }
 }
 </script>

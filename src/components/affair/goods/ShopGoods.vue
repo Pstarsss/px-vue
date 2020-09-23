@@ -2,14 +2,15 @@
    <div class='goods'>
      
      <div class="goodsitem demo-image__lazy" v-for="item in goods" :key="item.link">
-       <a :href="item.modelData.link">
-       <img :src="item.modelData.cover" alt="" >
+       <a :href="item.link">
+       <img :src="item.img" alt="" >
        <div class="itemcontent">
-         <span>{{item.modelData.desc}}</span>
-          <div class='user'>
-            <img :src="item.modelData.userInfo.avatar" alt="" >
-            <h5>{{item.modelData.userId}}</h5>
-          </div>
+         <h4>{{item.title}}</h4>
+         <div class='itemcontent2'>
+           <span>￥{{item.price}}</span>
+           <span class="iconfont-ali">{{item.cfav}} &#xe66d;</span>
+         </div>
+          <el-button type="danger" plain>立即购买</el-button>
        </div>
        </a>
      </div>
@@ -17,7 +18,7 @@
 </template>
 
 <script>
-// import good1 from '@/assets/json/goods.json'
+
 export default {
   components: {
     
@@ -62,14 +63,7 @@ export default {
         line-clamp: 2;
         -webkit-box-orient: vertical;
       }
-      & .user{
-        display: flex;
-        align-items: center;
-        & img{
-          width:4vw;
-          border-radius: 50%;
-        }
-      }
+    
     }
     & img{
       width:44vw;

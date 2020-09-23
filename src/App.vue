@@ -41,4 +41,7 @@ export default {
 require('@/assets/css/normalize.css')
 </script>
 <style lang='less' scoped>
+.app{
+  position: relative;
+}
 </style>
