@@ -17,7 +17,7 @@ export default {
     probeType:{
       type:[Number],
       default(){
-        return 0
+        return 1
       }
     },
     pullUpLoad:{
@@ -52,12 +52,18 @@ export default {
         click:true,
         pullDownRefresh:this.pullDownRefresh,
       });
-      this.bs.on('pullingUp',()=>{
-        this.$emit('pullingUp');
-      });
-      this.bs.on('scroll',({ y })=>{
-        this.$emit('scroll',y)
-      })
+      if(this.pullUpLoad){
+          this.bs.on('pullingUp',()=>{
+          this.$emit('pullingUp');
+          this.bs.refresh();
+        });
+      }
+      if(this.probeType >=2){
+          this.bs.on('scroll',({ y })=>{
+          this.$emit('scroll',y)
+        })
+      }
+      
     }
 
   }

@@ -50,11 +50,12 @@ export default {
           & img{
                 width: 22vw;
                 border-radius: 11px;
+                
           }
           & h3{
                 position: absolute;
                 bottom: 12%;
-                font-size: 35px;
+                font-size: 4vw;
                 color: #fff;
           }
     }

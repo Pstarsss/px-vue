@@ -48,6 +48,7 @@ export default {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #b8c2cc;
+    position: relative;
     & .adv-left{
       display: flex;
       align-self: center;

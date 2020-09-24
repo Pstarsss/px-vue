@@ -45,15 +45,26 @@ export default {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #dadfe49e;
 }
 .goodsitem{
   display: flex;
-
+  background-color: #fff;
+  margin: 1vw;
   & a{
     display: flex;
     flex-direction: column;
     & .itemcontent{
-      width:44vw;
+          width: 42vw;
+          margin: 0 auto;
+          font-size: 3vw;
+      & h4{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space:nowrap;
+          padding: 1vw;
+          font-weight: 300;
+      }    
       & span{
         text-overflow: -o-ellipsis-lastline;
         overflow: hidden;
@@ -63,11 +74,25 @@ export default {
         line-clamp: 2;
         -webkit-box-orient: vertical;
       }
-    
+     & .itemcontent2{
+           display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
     }
     & img{
-      width:44vw;
+      width:46vw;
+      border-radius:10px;
+      padding:1vw;
     }
   }
+}
+.el-button--danger{
+    width: 100%;
+    color: #fff;
+    font-size: 2.5vw;
+    background: #d71212f2;
+    border-color: #d96161;
+    margin-bottom: 1vw;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="homepage">
     
     
-    <scroll ref="scr" @scroll="showbacktop" @pulling-up="pullup1" :pullUpLoad="true">
+    <scroll ref="scr" @scroll="showbacktop" @pulling-up="pullup1" :pullUpLoad="true" :probeType="3">
       <search-bar></search-bar>
       <swiper></swiper>
       <recommand></recommand>
