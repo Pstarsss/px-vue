@@ -23,6 +23,12 @@ export default {
   created(){
     this.hotlist = Livegood[0].data.lives;
     
+  },
+  activated(){
+    console.log('1231');
+  },
+  deactivated(){
+    console.log('33213');
   }
 }
 </script>

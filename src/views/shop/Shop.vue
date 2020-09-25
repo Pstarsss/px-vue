@@ -1,14 +1,14 @@
 <template>
   <div class="shop">
-    <scroll ref='scr' @scroll="showbacktop" @pulling-up="pullup1" :pullUpLoad="true">
+    <scroll ref='scr' @scroll="showbacktop" :probeType="3" :pullUpLoad="true">
       <search-bar></search-bar>
       <shop-recommand1></shop-recommand1>
       <shop-recommand2></shop-recommand2>
       <placeholder></placeholder>
       <goods :homegoods="shops"></goods>
-      <back-top @click.native="toTop" v-show="isShow"></back-top>
+      
     </scroll>
-    
+    <back-top @click.native="toTop" v-show="isShow"></back-top>
   </div>
 </template>
 

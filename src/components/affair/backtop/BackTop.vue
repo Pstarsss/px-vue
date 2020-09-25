@@ -18,13 +18,13 @@ export default {
 .backtop{
   position:fixed;
   bottom: 4vw;
-  right: 2vw;
+  right: 3vw;
   z-index: 100;
   // border-radius: 43%;
   // background-color: #fff;
   & span{
     font-size: 40px;
-    color: #73b2e8;
+    color: #a3b2bf;
   }
 }
 

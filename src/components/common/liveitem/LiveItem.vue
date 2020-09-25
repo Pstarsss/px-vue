@@ -53,13 +53,12 @@ export default {
     };
   },
   created(){
-   
   }
 }
 </script>
 <style lang='less' scoped>
 .LiveItem{
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
   & a{
     
     & .topitem{
@@ -94,7 +93,7 @@ export default {
       }
       & > img{
         width: 95vw;
-        height: 60vh;
+        height: 57vh;
         position: absolute;
         z-index: -1;
         left: 2.5%;
@@ -143,6 +142,7 @@ export default {
           }
           & img{
             width: 13vw;
+            height: 13vh;
           }
           & span{
             position: absolute;
@@ -162,12 +162,14 @@ export default {
          & > div{
            display:flex;
            align-items:center;
+           margin: 1vw;
            & span{
                  font-size: 2vw;
               width: 20vw;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              text-indent: 0.5vw;
            }
          }
       }

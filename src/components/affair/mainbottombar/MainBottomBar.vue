@@ -57,6 +57,17 @@ export default {
     re(val){
       this.temp = val;
     }
+  },
+  created(){
+    let a2 = this.$route.path;
+    switch (this.$route.path){
+      case '/':this.temp = 0;break;
+      case '/mogu/homepage' : this.temp = 0;break;
+      case '/mogu/shop' : this.temp = 1;break;
+      case '/mogu/live/hot' : this.temp = 2;break;
+      case '/mogu/person' : this.temp = 3;break;
+    }
+   console.log(a2);
   }
 }
 require('@/assets/css/base.css')
@@ -73,6 +84,7 @@ require('@/assets/css/base.css')
     height: 6vh;
     border-top: 1px solid #abc;
     z-index: 100;
+    background-color:#fff;
 }
 .active{
   color:red;

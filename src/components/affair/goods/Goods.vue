@@ -47,7 +47,7 @@ export default {
 }
 .goodsitem{
   display: flex;
-
+  padding-bottom: 1.5vh;
   & a{
     display: flex;
     flex-direction: column;
