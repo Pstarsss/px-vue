@@ -62,6 +62,7 @@ require('@/assets/css/icon2/iconfont.js')
     font-size: 1.5rem;
   width: 3em;
   height: 1em;
+  padding-right: .5rem;
   /* margin-left: .8em; */
   text-align: center;
 }

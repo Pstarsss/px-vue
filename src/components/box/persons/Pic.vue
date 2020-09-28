@@ -6,7 +6,7 @@
         <div class="yuan">
           
         </div>
-        <div class="Id">小鳄鱼</div>
+        <div class="Id">smaj96</div>
         <div class="hyzx">
        
       </div>
@@ -55,7 +55,7 @@ require('@/assets/css/icon2/iconfont.js')
     /* background-color: yellow; */
     border-radius: 5rem;
     margin:-4.5rem auto 0;
-    background-image: url(歌单图标9.jpg);
+    background-image: url(小熊.png);
     background-size: 100%;
     border: 2px solid #fff;
     z-index: 999;

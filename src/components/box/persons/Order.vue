@@ -80,6 +80,7 @@
     font-size: 1.5rem;
   width: 2em;
   height: 1em;
+  padding-left: .8rem;
   /* margin-left: .8em; */
   text-align: center;
 }

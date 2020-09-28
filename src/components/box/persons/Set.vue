@@ -66,6 +66,7 @@
     width: 4em;
     text-align: center;
     margin-top: .2rem;
+    /* margin-left: .3rem; */
   }
   .box{
     margin: .2rem auto;
@@ -90,6 +91,7 @@
     font-size: 1.5rem;
   width: 2em;
   height: 1em;
+  padding-left: .8rem;
   /* margin-left: .8em; */
   text-align: center;
 }

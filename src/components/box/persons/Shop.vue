@@ -1,15 +1,18 @@
 <template>
 <div>
   <div class="left">
+    <a href="https://h5.mogu.com/cart/index.html?acm=3.mce.1_10_1m5ds.139413.0.mQxJBsbQ74P4f.pos_9904-m_516676-sd_119&ptp=32.qr95G.0.0.fJezi6mV">
     <div class="wz"> 
       购物车
     </div> 
     <div class="ty">
 
     </div>
+    </a>
   </div>
   <div class="right">
-    <div class="wz2"> 
+    <a href="">
+      <div class="wz2"> 
       <span>
       卡卷红包
       </span>
@@ -19,6 +22,7 @@
         </svg>
       </span>
     </div>
+    </a>
     <div class="wz2"> 
       <span>
       补贴保障
