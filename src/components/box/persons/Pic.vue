@@ -3,9 +3,11 @@
       <div class="red">
       </div>
       <div class="sec-top-box">
+        <a href="https://h5.mogu.com/brand-content/personal-homepage.html?uid=1f8tmds&ptp=32.qr95G.0.0.YRoABMFc">
         <div class="yuan">
           
         </div>
+        </a>
         <div class="Id">smaj96</div>
         <div class="hyzx">
        

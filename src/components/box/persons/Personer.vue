@@ -5,12 +5,14 @@
 
     <div class="sec-box">
       <div class="sec-box-chi">
-        <div>
+        <a href="https://h5.mogu.com/brand-content/personal-homepage.html?uid=1f8tmds&acm=3.mce.1_10_1m5di.139413.0.bbTeUsbXjoaQE.pos_9900-m_516671-sd_119&ptp=32.qr95G.0.0.hlTjyZFb">
+         <div>
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-zhuye"></use>
           </svg>
         </div>
         <div class="tex">我的主页</div>
+        </a>
       </div>
       <div class="sec-box-chi">
         <div>
