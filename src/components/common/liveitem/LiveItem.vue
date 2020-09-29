@@ -39,6 +39,7 @@
 
 <script>
 export default {
+  name:'liveitem',
   components: {
 
   },
@@ -93,7 +94,7 @@ export default {
       }
       & > img{
         width: 95vw;
-        height: 57vh;
+        height: 55.6vh;
         position: absolute;
         z-index: -1;
         left: 2.5%;
@@ -154,7 +155,18 @@ export default {
         }
       }
       & .rightcomment{
-         
+         opacity: 0;
+         animation: abc 3s infinite;
+         @keyframes abc{
+            0%{
+
+            }
+            100%{
+              opacity: 1;
+              transform: translateY(-40px);
+            }
+          }
+          
          & img{
            width: 5vw;
            border-radius: 50%;

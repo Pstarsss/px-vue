@@ -1,8 +1,8 @@
 <template>
    <div class='topadv'>
-     <div class="adv-left">
+     <a class="adv-left" @click="tohome">
        <img :src="mogulogo" alt="">
-     </div>
+     </a>
      <div class="adv-center">
        <h2>{{info[0].mainTitle}}</h2>
         <div>
@@ -14,9 +14,9 @@
           <span>{{info[0].subTitle}}</span>
         </div>
      </div>
-     <div class="adv-right">
+     <a class="adv-right" href="https://m.mogu.com/">
        <el-button type="danger" round>打开App</el-button>
-     </div>
+     </a>
    </div>
 </template>
 
@@ -36,6 +36,11 @@ export default {
       mogulogo:mogulogo,
       info:''
     };
+  },
+  methods:{
+    tohome(){
+      this.$router.push('/mogu/homepage');
+    }
   },
   created(){
    this.info = Advertiseda.data.list;

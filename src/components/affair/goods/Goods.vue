@@ -1,6 +1,5 @@
 <template>
    <div class='goods'>
-     
      <div class="goodsitem demo-image__lazy" v-for="item in goods" :key="item.link">
        <a :href="item.modelData.link">
        <img :src="item.modelData.cover" alt="" >
@@ -53,6 +52,7 @@ export default {
     flex-direction: column;
     & .itemcontent{
       width:44vw;
+      
       & span{
         text-overflow: -o-ellipsis-lastline;
         overflow: hidden;
@@ -73,6 +73,7 @@ export default {
     }
     & img{
       width:44vw;
+      border-radius: 11px;
     }
   }
 }

@@ -1,13 +1,13 @@
 <template>
    <div class='searchbar'>
-      <div class="left">
+      <div class="left" @click="classifypage">
         <span class="iconfont-ali">&#xe66d;</span>
       </div>
-      <div class="center">
+      <div class="center" @click="searchpage">
         <span class="iconfont-ali">&#xe645;</span>
         <input type="text" placeholder="连衣裙">
       </div>
-      <div class="right">
+      <div class="right" @click="chatpage">
         <span class="iconfont-ali">&#xe7db;</span>
       </div>
    </div>
@@ -20,7 +20,17 @@ export default {
     return {
     };
   },
-
+  methods:{
+    chatpage(){
+      this.$router.push('/mogu/chat');
+    },
+    classifypage(){
+      this.$router.push('/mogu/classify');
+    },
+    searchpage(){
+      this.$router.push('/mogu/search');
+    }
+  }
 }
 require('@/assets/css/icon/iconfont.css')
 </script>
@@ -30,6 +40,16 @@ require('@/assets/css/icon/iconfont.css')
     align-items: center;
     justify-content: space-around;
     padding:1vw;
+    animation: abab 0.6s ;
+    @keyframes abab {
+      0%{
+        transform: translateY(-3px);
+      }
+      100%{
+        transform: translateY(3px);
+        height: initial;
+      }
+    }
   & .left{
     width: 10vw;
     padding: 2vw;

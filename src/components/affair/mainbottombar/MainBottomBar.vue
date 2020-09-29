@@ -67,7 +67,7 @@ export default {
       case '/mogu/live/hot' : this.temp = 2;break;
       case '/mogu/person' : this.temp = 3;break;
     }
-   console.log(a2);
+   
   }
 }
 require('@/assets/css/base.css')
@@ -82,8 +82,8 @@ require('@/assets/css/base.css')
     justify-content: space-around;
     align-items: center;
     height: 6vh;
+    z-index: 10;
     border-top: 1px solid #abc;
-    z-index: 100;
     background-color:#fff;
 }
 .active{

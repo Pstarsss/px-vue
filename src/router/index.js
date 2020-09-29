@@ -8,12 +8,16 @@ Vue.use(VueRouter)
 const Live = ()=>import('@/views/live/Live.vue');
 const Shop = ()=>import('@/views/shop/Shop.vue');
 const Person = ()=>import('@/views/person/Person.vue');
-
+const Chat = () => import('@/views/chat/chat.vue');
+const Classify = () => import('@/views/classify/Classify.vue')
+const SContent = () =>import('@/views/searchContent/searchContent.vue')
+const Detail = ()=>import('@/views/detail/Detail.vue')
 
 const Hot = () => import('@/views/live/childvue/LiveHot.vue');
 const Concern = () => import('@/views/live/childvue/LiveConcern.vue');
 const Dress = () => import('@/views/live/childvue/LiveDress.vue');
 const Beauty = () => import('@/views/live/childvue/LiveBeauty.vue');
+
 
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
@@ -27,9 +31,31 @@ const routes = [
     component: HomePage
   },
   {
+    path: '/mogu',
+    redirect:'/mogu/homepage',
+    component: HomePage
+  },
+  {
+    path: '/mogu/chat',
+    component: Chat
+  },
+  {
+    path: '/mogu/classify',
+    component: Classify
+  },
+  // {
+  //   path: '/mogu/detail',
+  //   component : Detail
+  // },
+  {
+    path: '/mogu/search',
+    component: SContent
+  },
+  {
         path: '/mogu/homepage',
         component: HomePage 
   },
+
   {
         path: '/mogu/live',
         component: Live,

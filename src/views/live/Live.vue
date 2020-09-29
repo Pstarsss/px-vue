@@ -9,7 +9,7 @@
         <span v-for="(item,index) in titles" :key="index" @click="changeColor(index)" :class="{bot:(index==temp)}">{{item}}</span>
       </div> -->
       <div>
-        <keep-alive>
+        <keep-alive exclude="">
           <router-view></router-view>
         </keep-alive>
       </div>
