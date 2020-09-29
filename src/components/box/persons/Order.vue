@@ -21,13 +21,15 @@
         <div class="tex">大姨妈</div>
       </div>
       <div class="sec-box-chi">
+        <a href="https://www.mogu.com/x/im?imver=1.2&show_header=qq&ptp=32.qr95G.0.0.Pnfuw1XT#contacts">
         <div>
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-kefu
-"></use>
+            "></use>
           </svg>
         </div>
         <div class="tex">客服</div>
+        </a>
       </div>
       <div class="sec-box-chi">
         <div>
