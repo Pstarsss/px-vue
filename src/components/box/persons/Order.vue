@@ -21,7 +21,7 @@
         <div class="tex">大姨妈</div>
       </div>
       <div class="sec-box-chi">
-        <a href="https://www.mogu.com/x/im?imver=1.2&show_header=qq&ptp=32.qr95G.0.0.Pnfuw1XT#contacts">
+        <a  @click="jump1">
         <div>
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-kefu
@@ -43,7 +43,21 @@
   </div>
 </template>
 <script>
+export default{
+  components(){
 
+  },
+  data(){
+    return {
+
+    }
+  },
+  methods:{
+    jump1(){
+      this.$router.push('/mogu/chat');
+    }
+  }
+}
 </script>
 <style scoped>
 .sec-box{

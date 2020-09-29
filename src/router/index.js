@@ -12,6 +12,7 @@ const Chat = () => import('@/views/chat/chat.vue');
 const Classify = () => import('@/views/classify/Classify.vue')
 const SContent = () =>import('@/views/searchContent/searchContent.vue')
 const Detail = ()=>import('@/views/detail/Detail.vue')
+const ClassifyGoods = ()=>import('@/views/classify/ClassifyGoods.vue')
 
 const Hot = () => import('@/views/live/childvue/LiveHot.vue');
 const Concern = () => import('@/views/live/childvue/LiveConcern.vue');
@@ -41,12 +42,20 @@ const routes = [
   },
   {
     path: '/mogu/classify',
-    component: Classify
+    component: Classify,
+    children:[
+      {
+        path:'/',
+        redirect:'/mogu/classify/pa',
+        component:ClassifyGoods
+      },
+      {
+        path:'/mogu/classify/pa',
+        component:ClassifyGoods
+      },
+    ]
   },
-  // {
-  //   path: '/mogu/detail',
-  //   component : Detail
-  // },
+  
   {
     path: '/mogu/search',
     component: SContent

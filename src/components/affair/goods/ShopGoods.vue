@@ -1,7 +1,6 @@
 <template>
    <div class='goods'>
-     
-     <div class="goodsitem demo-image__lazy" v-for="item in goods" :key="item.link">
+     <div class="goodsitem " v-for="(item,m) in goods" :key="m">
        <a :href="item.link">
        <img :src="item.img" alt="" >
        <div class="itemcontent">
@@ -25,7 +24,7 @@ export default {
   },
   props:{
     homegoods:{
-      type:[Array]
+      type:[Array,Object]
     }
   },
   data() {
@@ -34,7 +33,11 @@ export default {
 
     };
   },
- 
+  computed:{
+    twoimg(){
+      return this.goods.img || item.img;
+    }
+  },
   created(){
     
   }

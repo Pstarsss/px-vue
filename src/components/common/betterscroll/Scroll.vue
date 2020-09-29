@@ -51,6 +51,7 @@ export default {
         pullUpLoad: this.pullUpLoad,
         click:true,
         pullDownRefresh:this.pullDownRefresh,
+        
       });
       if(this.pullUpLoad){
           this.bs.on('pullingUp',()=>{

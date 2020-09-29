@@ -1,5 +1,5 @@
 <template>
-   <div class='goods'>
+   <div class='goods' @click="todetail">
      <div class="goodsitem demo-image__lazy" v-for="item in goods" :key="item.link">
        <a :href="item.modelData.link">
        <img :src="item.modelData.cover" alt="" >
@@ -32,7 +32,11 @@ export default {
 
     };
   },
- 
+  methods:{
+    todetail(){
+      
+    }
+  },
   created(){
     
   }
