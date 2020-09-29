@@ -74,7 +74,7 @@ export default {
 }
 .more-shop1{
   & img{
-    width: 80vw;
+    width: 80vw !important;
   }
 }
 </style>
