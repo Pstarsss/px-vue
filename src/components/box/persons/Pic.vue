@@ -3,7 +3,7 @@
       <div class="red">
       </div>
       <div class="sec-top-box">
-        <a href="https://h5.mogu.com/brand-content/personal-homepage.html?uid=1f8tmds&ptp=32.qr95G.0.0.YRoABMFc">
+        <a href="https://h5.mogu.com/brand-content/personal-homepage.html?uid=1f8tmds&acm=3.mce.1_10_1m5di.139413.0.bbTeUsbXjoaQE.pos_9900-m_516671-sd_119&ptp=32.qr95G.0.0.hlTjyZFb">
         <div class="yuan">
           
         </div>
